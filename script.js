@@ -1,12 +1,12 @@
 function contar() {
-    let ini = document.getElementByInd('txti')
-    let fim = document.getElementByInd('txtf')
-    let passo = document.getElementByInd('txtp')
-    let res = document.getElementById(res)
+    let ini = document.getElementById('txti')
+    let fim = document.getElementById('txtf')
+    let passo = document.getElementById('txtp')
+    let res = document.getElementById('res')
 
     if (ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
-        res.innerHTML = 'Impossivel contar!'
-       // window.alert('[ERRO] Faltam dados!')
+        res.innerHTML = 'Impossivel contar!' 
+        //window.alert('[ERRO] Faltam dados!')
     } else {
         res.innerHTML = 'Contando: <br>'
         let i = Number(ini.value)
